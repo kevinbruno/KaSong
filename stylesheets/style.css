@@ -1,0 +1,129 @@
+/* importa as fontes */
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+
+/* faz os ajustes padrão no body */
+body {
+    padding: 0%;
+    margin: 0%;
+    background-image: linear-gradient(#3c493f, #36573a);
+    /*background: rgb(43,133,134);
+    background: linear-gradient(0deg, rgba(43,133,134,1) 6%, rgba(57,141,196,1) 89%);*/
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: rgb(221, 215, 215);
+}
+
+/* tira o estilo dos botões */
+button {
+    background-color: inherit;
+    border: none;
+    color: inherit
+}
+
+.container-musica {
+    padding: 28px;
+}
+
+/* ajusta o nome "KaSong" */
+div#nome{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+h2#kasong {
+    font-family: 'Rowdies', cursive;
+    font-size: large;
+    color: #999595;
+}
+
+/* ajusta a imagem da capa */
+#imagen {
+    width: 100%;
+    border-radius: 5%;
+}
+
+/* ajusta as informações da musica e o botão like */
+#barra-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#artista {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#titulo {
+    font-family: 'Rowdies', cursive;
+    padding: 0px;
+    margin: 0px;
+}
+#artista p {
+    font-family: 'Rowdies', cursive;
+    font-size: small;
+    font-weight: 300;
+    color: #999595;
+    padding: 0px;
+    margin: 0px;
+}
+#like {
+    font-size: 35px;
+}
+
+/* barra de progresso (tempo) */
+#barra-tempo {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    background-color: #6b6868;
+    height: 3px;
+    width: 100%;
+    border-radius: 50px;
+}
+/* controla o progresso atual */
+#progresso-atual {
+    height: inherit;
+    width: 0%;
+    align-items: flex-start;
+    justify-content: start;
+    background-color: #fff;
+    position: relative;
+}
+#progresso-atual:after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: -3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+/*ajusta os textos do tempo*/
+#barra-tempo #texto-tempo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #b1b1b1;
+}
+
+/* ajusta a barra de botões*/
+#botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+/* ajusta o tamanho dos botões */
+.botao {
+    font-size: 30px;
+}
+#proxima, #anterior {
+    font-size: 39px;
+}
+#tocar {
+    font-size: 45px;
+}
