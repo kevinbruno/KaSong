@@ -15,66 +15,66 @@ const proxima = document.getElementById('proxima')
 
  // constantes com as infos das musicas
 const asItWas = {
-    'capa': '../KaSong/imgs/asItWas.jpg',
+    'capa': '../imgs/asItWas.jpg',
     'nome': 'As It Was',
     'artista': 'Harry Styles',
-    'musica': '../KaSong/musicas/as_it_was.mp3',
+    'musica': '../musicas/as_it_was.mp3',
     'tempo': '2:45'
 }
 const beggin = {
-    'capa': '../KaSong/imgs/beggin.webp',
+    'capa': '../imgs/beggin.webp',
     'nome': 'Beggin',
     'artista': 'Måneskin',
-    'musica': '../KaSong/musicas/beggin.mp3',
+    'musica': '../musicas/beggin.mp3',
     'tempo': '3:31'
 }
 const bones = {
-    'capa': '../KaSong/imgs/bones.jpg',
+    'capa': '../imgs/bones.jpg',
     'nome': 'Bones',
     'artista': 'Imagine Dragons',
-    'musica': '../KaSong/musicas/bones.mp3',
+    'musica': '../musicas/bones.mp3',
     'tempo': '2:45'
 }
 const m505 = {
-    'capa': '../KaSong/imgs/505.jpg',
+    'capa': '../imgs/505.jpg',
     'nome': '505',
     'artista': 'Arctic Monkeys',
-    'musica': '../KaSong/musicas/505.mp3',
+    'musica': '../musicas/505.mp3',
     'tempo': '4:14'
 }
 const chlorine = {
-    'capa': '../KaSong/imgs/chlorine.jpg',
+    'capa': '../imgs/chlorine.jpg',
     'nome': 'Chlorine',
     'artista': 'Twenty One Pilots',
-    'musica': '../KaSong/musicas/chlorine.mp3',
+    'musica': '../musicas/chlorine.mp3',
     'tempo': '5:25'
 }
 const heathens = {
-    'capa': '../KaSong/imgs/heathens.jpg',
+    'capa': '../imgs/heathens.jpg',
     'nome': 'Heathens',
     'artista': 'Twenty One Pilots',
-    'musica': '../KaSong/musicas/heathens.mp3',
+    'musica': '../musicas/heathens.mp3',
     'tempo': '3:16'
 }
 const spaceSong = {
-    'capa': '../KaSong/imgs/spaceSong.jpg',
+    'capa': '../imgs/spaceSong.jpg',
     'nome': 'Space Song',
     'artista': 'Beach House',
-    'musica': '../KaSong/musicas/spaceSong.mp3',
+    'musica': '../musicas/spaceSong.mp3',
     'tempo': '5:21'
 }
 const young = {
-    'capa': '../KaSong/imgs/young.jpg',
+    'capa': '../imgs/young.jpg',
     'nome': 'Young',
     'artista': 'Vacations',
-    'musica': '../KaSong/musicas/young.mp3',
+    'musica': '../musicas/young.mp3',
     'tempo': '3:10'
 }
 const money = {
-    'capa': '../KaSong/imgs/money.jpg',
+    'capa': '../imgs/money.jpg',
     'nome': 'Money',
     'artista': 'The Drums',
-    'musica': '../KaSong/musicas/money.mp3',
+    'musica': '../musicas/money.mp3',
     'tempo': '3:54'
 }
  // playlist (com todas as variaveis com as informações das) e indice
