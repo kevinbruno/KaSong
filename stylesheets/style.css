@@ -11,6 +11,7 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
+    align-items: center;
     flex-direction: column;
     color: rgb(221, 215, 215);
 }
@@ -23,7 +24,7 @@ button {
 }
 
 .container-musica {
-    padding: 28px;
+    width: 70%;
 }
 
 /* ajusta o nome "KaSong" */
@@ -37,6 +38,7 @@ h2#kasong {
     font-family: 'Rowdies', cursive;
     font-size: large;
     color: #999595;
+    margin: 60px;
 }
 
 /* ajusta a imagem da capa */
@@ -74,10 +76,15 @@ h2#kasong {
     font-size: 35px;
 }
 
+/* container para ser clicavel */
+#constainer-progresso {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
 /* barra de progresso (tempo) */
 #barra-tempo {
-    margin-top: 35px;
-    margin-bottom: 20px;
     background-color: #6b6868;
     height: 3px;
     width: 100%;
@@ -85,14 +92,17 @@ h2#kasong {
 }
 /* controla o progresso atual */
 #progresso-atual {
+    --progresso: 0%; /*varival em css=)*/
     height: inherit;
-    width: 0%;
+    width: var(--progresso);
     align-items: flex-start;
     justify-content: start;
     background-color: #fff;
     position: relative;
+    border-radius: 50px;
 }
-#progresso-atual:after {
+
+/*#progresso-atual:after {
     content: '';
     position: absolute;
     right: -5px;
@@ -101,7 +111,8 @@ h2#kasong {
     height: 10px;
     border-radius: 5px;
     background-color: #fff;
-}
+}*/
+
 /*ajusta os textos do tempo*/
 #barra-tempo #texto-tempo {
     display: flex;
@@ -120,10 +131,27 @@ h2#kasong {
 /* ajusta o tamanho dos botões */
 .botao {
     font-size: 30px;
+    cursor: pointer;
 }
 #proxima, #anterior {
     font-size: 39px;
 }
 #tocar {
     font-size: 45px;
+}
+
+.botao-ativo{
+    color: rgb(88, 211, 88);
+}
+
+#player-barra {
+    margin-top: 100px;
+}
+
+#caixa-tempo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: smaller;
+    margin-top: 6px;
 }

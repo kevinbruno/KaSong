@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- importa o css -->
-    <link rel="stylesheet" href="./KaSong/stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/style.css">
     <!-- importa os icones -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>KaSong</title>
 </head>
 <body>
+    <audio id="audio"></audio>
     <div class="container-musica">
         <div id="nome"><h2 id="kasong">KaSong</h2></div>
 
@@ -19,8 +20,6 @@
             <div id="capa">
                 <img id="imagen" alt="capa da música"/>
             </div>
-
-            <audio id="audio"></audio>
 
             <div id="barra-info">
                 <div id="artista">
@@ -32,33 +31,37 @@
                 </button>
             </div>
         </div>
+        
+        <div id="player-barra">
+            <div id="constainer-progresso">
+                <div id="barra-tempo">
+                    <div id="progresso-atual"></div>
+                </div>
+                <div id="caixa-tempo">
+                    <div id="tempo-atual">00:00</div>
+                    <div id="tempo-total">00:00</div>
+                </div>
+            </div>
 
-        <div id="barra-tempo">
-            <div id="progresso-atual"></div>
-            <!--div id="texto-tempo">
-                <div>0:00</div>
-                <div id="tempo-musica">?:??</div>
-            </div-->
-        </div>
-
-        <div id="botoes">
-            <button id="embaralhar" class="botao">
-                <i class="bi bi-shuffle"></i>
-            </button>
-            <button id="anterior" class="botao">
-                <i class="bi bi-skip-start-fill"></i>
-            </button>
-            <button id="tocar" class="botao">
-                <i class="bi bi-play-circle-fill" id="play-pause"></i>
-            </button>
-            <button id="proxima" class="botao">
-                <i class="bi bi-skip-end-fill"></i>
-            </button>
-            <button id="repetir" class="botao">
-                <i class="bi bi-repeat"></i>
-            </button>
+            <div id="botoes">
+                <button id="embaralhar" class="botao">
+                    <i class="bi bi-shuffle"></i>
+                </button>
+                <button id="anterior" class="botao">
+                    <i class="bi bi-skip-start-fill"></i>
+                </button>
+                <button id="tocar" class="botao">
+                    <i class="bi bi-play-circle-fill" id="play-pause"></i>
+                </button>
+                <button id="proxima" class="botao">
+                    <i class="bi bi-skip-end-fill"></i>
+                </button>
+                <button id="repetir" class="botao">
+                    <i class="bi bi-repeat"></i>
+                </button>
+            </div>
         </div>
     </div>
-    <script src="./KaSong/scripts/script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
